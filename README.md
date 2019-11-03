@@ -1,6 +1,9 @@
 # dockerHadoop
 ## Docker 
-dockerhub addr:  minokun/hadoop_single
+
+dockerhub addr:  https://hub.docker.com/u/minokun
+
+project docker name: minokun/hadoop_single
 
 use tag is v1.1
 
