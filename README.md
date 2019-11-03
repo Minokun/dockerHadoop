@@ -4,6 +4,7 @@ dockerhub addr:  minokun/hadoop_single
 use tag is v1.1
 if you want build it, command： docker pull minokun/hadoop_single:v1.1
 docker os is centos8 
+all service path under /opt
 include follow service
 > Hadoop 3.1.2
 > Spark 2.4.4
@@ -23,3 +24,7 @@ the program ouput the result in hdfs path: /log_summary format csv
 
 在服务上后续还会继续往上增加mysql hive等组件，使整个docker可以直接用来做离线数据分析实验。
 但是，总的来说，hadoop的瓶颈大概率在io上，所以生产环境不建议用docker来部署，此次项目只用作实验。
+
+还为日志分析后的docker状态打了一个镜像，可直接使用命令拉取：docker pull minokun/hadoop_single:cerence
+log日志名称： access_log hdfs路径：/log_file
+输出路径： /log_summary
