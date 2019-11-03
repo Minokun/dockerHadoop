@@ -1,11 +1,17 @@
 # dockerHadoop
 ## Docker 
 dockerhub addr:  minokun/hadoop_single
+
 use tag is v1.1
+
 if you want build it, command： docker pull minokun/hadoop_single:v1.1
+
 docker os is centos8 
+
 all service path under /opt
+
 include follow service
+
 > Hadoop 3.1.2
 > Spark 2.4.4
 > python 3.7
@@ -13,8 +19,11 @@ include follow service
 
 ## Log Summary
 i put the access.log in hdfs path: /log_file
+
 and summary api data by pyspark
+
 the pyspark program name is log_summary.py
+
 the program ouput the result in hdfs path: /log_summary format csv
 
 ## 总结 
