@@ -9,6 +9,10 @@ use tag is v1.1
 
 if you want build it, command： docker pull minokun/hadoop_single:v1.1
 
+Then run comand docker run -itd minokun/hadoop_single:v1.1
+
+get in the container and run /usr/sbin/sshd & source /etc/profile & start-all.sh
+
 docker os is centos8 
 
 all service path under /opt
