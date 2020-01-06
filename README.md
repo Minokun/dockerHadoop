@@ -5,13 +5,11 @@ dockerhub addr:  https://hub.docker.com/u/minokun
 
 project docker name: minokun/hadoop_single
 
-use tag is v1.1
+use tag is latest
 
-if you want build it, command： docker pull minokun/hadoop_single:v1.1
-
-Then run comand docker run -itd minokun/hadoop_single:v1.1
-
-get in the container and run /usr/sbin/sshd & source /etc/profile & start-all.sh
+the zookeeper hbase download url:
+http://mirrors.tuna.tsinghua.edu.cn/apache/hbase/hbase-1.4.12/hbase-1.4.12-bin.tar.gz
+http://mirror.bit.edu.cn/apache/zookeeper/stable/apache-zookeeper-3.5.6-bin.tar.gz
 
 docker os is centos8 
 
@@ -23,6 +21,8 @@ include follow service
 > Spark 2.4.4
 > python 3.7
 > Scala 2.12.6
+> Hbase1.4.12
+> Zookeeper3.5.6
 
 ## Log Summary
 i put the access.log in hdfs path: /log_file
