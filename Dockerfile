@@ -7,10 +7,6 @@ RUN /opt/hadoop-3.1.2/sbin/start-all.sh && \
 RUN echo '' > /opt/hbase-1.4.12/hbase_thrift.log 2>&1
 RUN nohup /opt/hbase-1.4.12/bin/hbase thrift start >/opt/hbase-1.4.12/hbase_thrift.log 2>&1 &
 
-WORKDIR /root
-COPY ./access_log ./
-COPY ./log_summary.py ./
-
 EXPOSE 50070
 EXPOSE 4040
 EXPOSE 2181
